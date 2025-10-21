@@ -557,10 +557,10 @@ export default function ContactSection() {
                     <div>
                       <h4 className="font-medium text-banking-dark">Email</h4>
                       <a
-                        href="mailto:contact@berberpay.com"
+                        href="mailto:contact@BlotoPay.com"
                         className="text-primary-blue hover:underline mt-1 inline-block"
                       >
-                        contact@berberpay.com
+                        contact@BlotoPay.com
                       </a>
                     </div>
                   </div>

@@ -54,7 +54,7 @@ const Navbar = () => {
             </div> */}
             <div className="ml-3">
               <span className="text-xl font-sans font-bold text-primary-blue">
-                BerBerPay
+                BlotoPay
               </span>
               <div className="flex items-center">
                 <span className="text-sm text-primary-blue font-arabic">

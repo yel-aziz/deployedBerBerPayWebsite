@@ -21,7 +21,7 @@ const tajawal = Tajawal({
 });
 
 export const metadata = {
-  title: 'BerberPay - La Solution de Paiement Intelligente au Maroc',
+  title: 'BlotoPay - La Solution de Paiement Intelligente au Maroc',
   description: 'Divisez vos achats en paiements sans intérêt. La nouvelle façon de magasiner au Maroc.',
 }
 

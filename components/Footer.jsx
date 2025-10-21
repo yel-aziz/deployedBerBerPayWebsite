@@ -358,10 +358,10 @@ export default function Footer() {
                 </div>
                 <div>
                   <a
-                    href="mailto:contact@berberpay.com"
+                    href="mailto:contact@BlotoPay.com"
                     className="text-gray-300 hover:text-white transition-colors duration-300"
                   >
-                    contact@berberpay.com
+                    contact@BlotoPay.com
                   </a>
                 </div>
               </li>
