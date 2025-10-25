@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/user/Desktop/deployedBerBerPayWebsite/app/pool/page.jsx"],"sourcesContent":["'use client';\r\n\r\nimport { useEffect } from 'react';\r\nimport { usePathname } from 'next/navigation';\r\n\r\nexport default function Pool() {\r\n  const pathname = usePathname();\r\n\r\n  useEffect(() => {\r\n    const isAndroid = navigator.userAgent.toLowerCase().indexOf('android') > -1;\r\n    \r\n    if (isAndroid) {\r\n      window.location.href = `intent:/${pathname}#Intent;scheme=blotopay;package=com.yassirira.newapp;end`;\r\n    } else {\r\n      window.location.href = `blotopay:/${pathname}`;\r\n    }\r\n  }, [pathname]);\r\n\r\n  return null;\r\n}"],"names":[],"mappings":";;;AAEA;AACA;;AAHA;;;AAKe,SAAS;;IACtB,MAAM,WAAW,CAAA,GAAA,qIAAA,CAAA,cAAW,AAAD;IAE3B,CAAA,GAAA,6JAAA,CAAA,YAAS,AAAD;0BAAE;YACR,MAAM,YAAY,UAAU,SAAS,CAAC,WAAW,GAAG,OAAO,CAAC,aAAa,CAAC;YAE1E,IAAI,WAAW;gBACb,OAAO,QAAQ,CAAC,IAAI,GAAG,CAAC,QAAQ,EAAE,SAAS,wDAAwD,CAAC;YACtG,OAAO;gBACL,OAAO,QAAQ,CAAC,IAAI,GAAG,CAAC,UAAU,EAAE,UAAU;YAChD;QACF;yBAAG;QAAC;KAAS;IAEb,OAAO;AACT;GAdwB;;QACL,qIAAA,CAAA,cAAW;;;KADN","debugId":null}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/user/Desktop/deployedBerBerPayWebsite/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0],"debugId":null}}]
+}
