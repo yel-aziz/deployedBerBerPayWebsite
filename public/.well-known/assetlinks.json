@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.yassirira.newapp",
+      "sha256_cert_fingerprints": [
+        "23:21:61:17:B9:CA:B4:ED:4E:D0:58:93:99:31:EF:5B:EF:F4:1B:5D:20:41:29:EC:14:6B:5F:33:B6:6C:8D:91"
+      ]
+    }
+  }
+]
