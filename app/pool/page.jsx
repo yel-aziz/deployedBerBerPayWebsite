@@ -1,20 +1,27 @@
 'use client';
 
 import { useEffect } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 
 export default function Pool() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
-    const isAndroid = navigator.userAgent.toLowerCase().indexOf('android') > -1;
-    
+    const isAndroid = navigator.userAgent.toLowerCase().includes('android');
+
+    // Convert search params (e.g. ?user=yassir&ref=123) into a string
+    const queryString = searchParams.toString();
+    const pathWithParams = queryString ? `${pathname}?${queryString}` : pathname;
+
     if (isAndroid) {
-      window.location.href = `intent:/${pathname}#Intent;scheme=blotopay;package=com.yassirira.newapp;end`;
+      // Android intent deep link
+      window.location.href = `intent:/${pathWithParams}#Intent;scheme=blotopay;package=com.yassirira.newapp;end`;
     } else {
-      window.location.href = `blotopay:/${pathname}`;
+      // iOS or other platforms
+      window.location.href = `blotopay:/${pathWithParams}`;
     }
-  }, [pathname]);
+  }, [pathname, searchParams]);
 
   return null;
 }
