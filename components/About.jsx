@@ -211,7 +211,7 @@ export default function HowItWorksSection() {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
                       <span className="text-3xl font-bold text-primary-blue">
-                        12M
+                        M
                       </span>
                       <span className="ml-2 text-sm text-gray-500">
                         MAD en <br />
@@ -767,17 +767,17 @@ export default function HowItWorksSection() {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 {[
                   {
-                    metric: "15K+",
+                    metric: "+",
                     label: "Utilisateurs Actifs",
                     growth: "+126% cette année",
                   },
                   {
-                    metric: "24M MAD",
+                    metric: " MAD",
                     label: "Fonds Circulant",
                     growth: "+88% cette année",
                   },
                   {
-                    metric: "1,200+",
+                    metric: "+",
                     label: "Groupes Daret",
                     growth: "+105% cette année",
                   },
