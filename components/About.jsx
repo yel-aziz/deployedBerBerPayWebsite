@@ -767,22 +767,22 @@ export default function HowItWorksSection() {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 {[
                   {
-                    metric: "+",
+                    metric: "0+",
                     label: "Utilisateurs Actifs",
                     growth: "+126% cette année",
                   },
                   {
-                    metric: " MAD",
+                    metric: "0 MAD",
                     label: "Fonds Circulant",
                     growth: "+88% cette année",
                   },
                   {
-                    metric: "+",
+                    metric: "0+",
                     label: "Groupes Daret",
                     growth: "+105% cette année",
                   },
                   {
-                    metric: "98.7%",
+                    metric: "0%",
                     label: "Taux de Complétion",
                     growth: "Performance Exceptionnelle",
                   },
@@ -933,9 +933,9 @@ export default function HowItWorksSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {[
-                { metric: "42%", label: "ROI Annuel", icon: "chart-up" },
+                { metric: "0%", label: "ROI Annuel", icon: "chart-up" },
                 {
-                  metric: "8.5M MAD",
+                  metric: "0M MAD",
                   label: "Levée de fonds ciblée",
                   icon: "money",
                 },
