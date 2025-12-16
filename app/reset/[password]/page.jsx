@@ -4,42 +4,30 @@ import { useEffect } from "react";
 
 const ANDROID_PLAY_URL =
   "https://play.google.com/store/apps/details?id=com.yassirira.newapp";
-const HUAWEI_APPGALLERY_URL =
-  "https://appgallery.huawei.com/#/app/CXXXXXXXX";
 const IOS_APP_STORE_URL =
   "https://apps.apple.com/app/idXXXXXXXXX";
 
-export default function OpenAppPage() {
+export default function ResetPage({
+  params,
+}: {
+  params: { token: string };
+}) {
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    const token = params.token;
+    if (!token) return;
+
+    const encoded = encodeURIComponent(token);
+
+    // 🔥 IMPORTANT: triple slash
+    const deepLink = `blotopay:///reset?token=${encoded}`;
+    const intentLink = `intent:///reset?token=${encoded}#Intent;scheme=blotopay;package=com.yassirira.newapp;end`;
 
     const ua = navigator.userAgent.toLowerCase();
     const isAndroid = ua.includes("android");
     const isIOS = /iphone|ipad|ipod/.test(ua);
-    const isHuawei = ua.includes("huawei") || ua.includes("honor");
-
-    // ✅ Get JWT from URL
-    const params = new URLSearchParams(window.location.search);
-    const token = params.get("token");
-
-    if (!token) {
-      console.error("Missing token");
-      return;
-    }
-
-    // ✅ Encode token (VERY IMPORTANT)
-    const encodedToken = encodeURIComponent(token);
-
-    // ✅ Deep link
-    const deepLinkPath = `auth?token=${encodedToken}`;
-
-    const appUrl = `blotopay://${deepLinkPath}`;
-    const intentUrl = `intent://${deepLinkPath}#Intent;scheme=blotopay;package=com.yassirira.newapp;end`;
 
     const storeUrl = isAndroid
-      ? isHuawei
-        ? HUAWEI_APPGALLERY_URL
-        : ANDROID_PLAY_URL
+      ? ANDROID_PLAY_URL
       : isIOS
       ? IOS_APP_STORE_URL
       : ANDROID_PLAY_URL;
@@ -47,9 +35,9 @@ export default function OpenAppPage() {
     const start = Date.now();
 
     if (isAndroid) {
-      window.location.href = intentUrl;
+      window.location.href = intentLink;
     } else {
-      window.location.href = appUrl;
+      window.location.href = deepLink;
     }
 
     const t = setTimeout(() => {
@@ -59,7 +47,7 @@ export default function OpenAppPage() {
     }, 1500);
 
     return () => clearTimeout(t);
-  }, []);
+  }, [params.token]);
 
   return null;
 }
