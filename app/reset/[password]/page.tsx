@@ -18,11 +18,7 @@ export default function ResetPage() {
     // ✅ THIS WORKS ON ANDROID
     window.location.href = `blotopay:///reset?token=${encoded}`;
 
-    // Fallback if app not installed
-    setTimeout(() => {
-      window.location.href = ANDROID_PLAY_URL;
-    }, 2000);
-  }, [password]);
+  
 
   return (
     <div style={{ padding: 20 }}>
