@@ -19,6 +19,7 @@ export default function ResetPage() {
     window.location.href = `blotopay:///reset?token=${encoded}`;
 
   
+  }, [password]);
 
   return (
     <div style={{ padding: 20 }}>
