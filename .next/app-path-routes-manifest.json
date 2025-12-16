@@ -3,5 +3,6 @@
   "/_not-found/page": "/_not-found",
   "/pool/[id]/page": "/pool/[id]",
   "/page": "/",
+  "/reset/[password]/page": "/reset/[password]",
   "/pool/page": "/pool"
 }

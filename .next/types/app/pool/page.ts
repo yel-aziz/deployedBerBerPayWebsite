@@ -1,4 +1,4 @@
-// File: C:\Users\user\Desktop\deployedBerBerPayWebsite\app\pool\page.jsx
+// File: C:\Users\user\Desktop\deployedBerBerPayWebsite\app\pool\page.tsx
 import * as entry from '../../../../app/pool/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

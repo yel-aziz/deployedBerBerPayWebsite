@@ -21,6 +21,14 @@
         "nxtPid": "nxtPid"
       },
       "namedRegex": "^/pool/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/reset/[password]",
+      "regex": "^/reset/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPpassword": "nxtPpassword"
+      },
+      "namedRegex": "^/reset/(?<nxtPpassword>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [
