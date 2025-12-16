@@ -18,9 +18,9 @@ export default function ResetPage({
 
     const encoded = encodeURIComponent(token);
 
-    // 🔥 IMPORTANT: triple slash
+    // ✅ Correct URLs
     const deepLink = `blotopay:///reset?token=${encoded}`;
-    const intentLink = `intent:///reset?token=${encoded}#Intent;scheme=blotopay;package=com.yassirira.newapp;end`;
+    const intentLink = `intent://reset?token=${encoded}#Intent;scheme=blotopay;package=com.yassirira.newapp;end`;
 
     const ua = navigator.userAgent.toLowerCase();
     const isAndroid = ua.includes("android");
@@ -32,22 +32,38 @@ export default function ResetPage({
       ? IOS_APP_STORE_URL
       : ANDROID_PLAY_URL;
 
-    const start = Date.now();
-
+    // ✅ Android works automatically
     if (isAndroid) {
       window.location.href = intentLink;
-    } else {
-      window.location.href = deepLink;
+      return;
     }
 
-    const t = setTimeout(() => {
-      if (Date.now() - start < 1600) {
-        window.location.href = storeUrl;
-      }
-    }, 1500);
+    // ⚠️ iOS needs user interaction fallback
+    window.location.href = deepLink;
 
-    return () => clearTimeout(t);
+    setTimeout(() => {
+      window.location.href = storeUrl;
+    }, 2000);
   }, [params.token]);
 
-  return null;
+  return (
+    <div style={{ padding: 20 }}>
+      <h2>Opening BlotoPay…</h2>
+      <p>If the app doesn’t open, tap below:</p>
+      <a
+        href={`blotopay:///reset?token=${encodeURIComponent(params.token)}`}
+        style={{
+          display: "inline-block",
+          marginTop: 16,
+          padding: "12px 20px",
+          background: "#000",
+          color: "#fff",
+          borderRadius: 8,
+          textDecoration: "none",
+        }}
+      >
+        Open BlotoPay App
+      </a>
+    </div>
+  );
 }
