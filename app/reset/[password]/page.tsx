@@ -5,64 +5,31 @@ import { useParams } from "next/navigation";
 
 const ANDROID_PLAY_URL =
   "https://play.google.com/store/apps/details?id=com.yassirira.newapp";
-const IOS_APP_STORE_URL =
-  "https://apps.apple.com/app/idXXXXXXXXX";
 
 export default function ResetPage() {
   const params = useParams();
-  const token = params?.token as string | undefined;
+  const password = params?.password as string | undefined;
 
   useEffect(() => {
-    if (!token) return;
+    if (!password) return;
 
-    const encoded = encodeURIComponent(token);
+    const encoded = encodeURIComponent(password);
 
-    const deepLink = `blotopay:///reset?token=${encoded}`;
-    const intentLink =
-      `intent://reset?token=${encoded}` +
-      `#Intent;scheme=blotopay;package=com.yassirira.newapp;end`;
+    // ✅ THIS WORKS ON ANDROID
+    window.location.href = `blotopay:///reset?token=${encoded}`;
 
-    const ua = navigator.userAgent.toLowerCase();
-    const isAndroid = ua.includes("android");
-    const isIOS = /iphone|ipad|ipod/.test(ua);
-
-    const storeUrl = isAndroid
-      ? ANDROID_PLAY_URL
-      : isIOS
-      ? IOS_APP_STORE_URL
-      : ANDROID_PLAY_URL;
-
-    if (isAndroid) {
-      window.location.href = intentLink;
-      return;
-    }
-
-    // iOS: attempt + fallback
-    window.location.href = deepLink;
+    // Fallback if app not installed
     setTimeout(() => {
-      window.location.href = storeUrl;
+      window.location.href = ANDROID_PLAY_URL;
     }, 2000);
-  }, [token]);
+  }, [password]);
 
   return (
     <div style={{ padding: 20 }}>
       <h2>Opening BlotoPay…</h2>
       <p>If the app doesn’t open, tap below:</p>
       <a
-        href={
-          token
-            ? `blotopay:///reset?token=${encodeURIComponent(token)}`
-            : "#"
-        }
-        style={{
-          display: "inline-block",
-          marginTop: 16,
-          padding: "12px 20px",
-          background: "#000",
-          color: "#fff",
-          borderRadius: 8,
-          textDecoration: "none",
-        }}
+        href={`blotopay:///reset?token=${encodeURIComponent(password ?? "")}`}
       >
         Open BlotoPay App
       </a>
