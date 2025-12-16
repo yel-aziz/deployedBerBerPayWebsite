@@ -1,6 +1,6 @@
 {
   "name": "BlotoPay",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -18,15 +18,9 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.483.0",
-<<<<<<< HEAD
     "next": "15.2.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-=======
-    "next": "^16.0.10",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
->>>>>>> 4491256 (4)
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7"
   },
