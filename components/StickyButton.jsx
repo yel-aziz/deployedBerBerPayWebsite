@@ -148,8 +148,8 @@ export function AppDownloadForm({ isOpen, onClose, formTitle }) {
                     </svg>
                   </div>
                   <span>
-                    Vos informations sont sécurisées et ne seront jamais
-                    partagées
+                    Vos données sont protégées. Consultez notre Politique de
+                    confidentialité.
                   </span>
                 </div>
 
@@ -279,11 +279,11 @@ export default function AppDownload({ variant = "banner" }) {
         <div className="lg:flex items-center">
           <div className="lg:w-2/3 p-10 lg:p-16 relative z-10">
             <h3 className="text-3xl font-bold text-white mb-4">
-              Prêt à rejoindre la révolution financière Daret ?
+              Prêt à organiser votre cercle Daret ?
             </h3>
             <p className="text-white/80 text-lg mb-8">
-              Créez ou rejoignez un groupe Daret dès aujourd'hui et découvrez
-              une nouvelle façon d'épargner collectivement.
+              Créez ou rejoignez un groupe Daret. Outil de suivi gratuit — pas
+              d'in-app paiements.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a

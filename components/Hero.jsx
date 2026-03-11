@@ -83,7 +83,7 @@ const Hero = () => {
             <div className="space-y-6">
               <div className="inline-block px-4 py-1 bg-primary-blue/10 rounded-full">
                 <p className="text-primary-blue font-medium text-sm">
-                  Révolution Financière Marocaine
+                  Épargne collective marocaine
                 </p>
               </div>
 
@@ -112,9 +112,9 @@ const Hero = () => {
                 <span className="font-semibold">
                   Une tradition transformée par la technologie.
                 </span>{" "}
-                Notre application modernise l'épargne rotative "Daret" en toute
-                sécurité, permettant aux communautés marocaines de prospérer
-                ensemble.
+                Notre application vous aide à organiser et suivre votre cercle
+                d'épargne rotative « Daret ». Nous ne détenons ni ne transférons
+                d'argent — uniquement un outil de suivi et de rappels.
               </p>
 
               {/* Trust elements with culturally relevant icons */}
@@ -138,10 +138,10 @@ const Hero = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-banking-dark">
-                      Sécurité Bancaire
+                      Suivi des contributions
                     </h3>
                     <p className="text-sm text-gray-600">
-                      Protection des fonds avec standards bancaires
+                      Voyez qui a contribué — pas de détention de fonds
                     </p>
                   </div>
                 </div>
@@ -222,7 +222,7 @@ const Hero = () => {
                       Transparence Totale
                     </h3>
                     <p className="text-sm text-gray-600">
-                      Suivi en temps réel de chaque dirham
+                      Suivi des contributions pour tous les membres
                     </p>
                   </div>
                 </div>
@@ -586,8 +586,8 @@ const Hero = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs font-bold">Conforme aux normes</p>
-                    <p className="text-xs text-gray-500">Bank Al-Maghrib</p>
+                    <p className="text-xs font-bold">Outil de suivi</p>
+                    <p className="text-xs text-gray-500">Pas d’in-app paiements</p>
                   </div>
                 </div>
               </div>

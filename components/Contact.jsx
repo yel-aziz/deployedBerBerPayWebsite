@@ -137,7 +137,7 @@ export default function ContactSection() {
                 </svg>
               </div>
               <span className="px-4 py-2 bg-primary-blue/10 text-primary-blue font-semibold text-sm rounded-full">
-                PARLONS DE VOTRE AVENIR FINANCIER
+                PARLONS DE VOTRE CERCLE DARET
               </span>
             </div>
           </div>
@@ -439,8 +439,8 @@ export default function ContactSection() {
                         </svg>
                       </div>
                       <span className="ml-2 text-sm text-gray-600">
-                        Vos informations sont sécurisées et ne seront jamais
-                        partagées
+                        Vos données sont protégées. Consultez notre{" "}
+                        <a href="#privacy" className="text-primary-blue hover:underline">Politique de confidentialité</a>.
                       </span>
                     </div>
                   </div>

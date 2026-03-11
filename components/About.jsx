@@ -52,7 +52,7 @@ export default function HowItWorksSection() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-blue">
-            Le Cycle Financier{" "}
+            Le Cycle{" "}
             <span className="relative inline-block">
               Daret
               <svg
@@ -76,9 +76,9 @@ export default function HowItWorksSection() {
             <span className="font-semibold">
               L'innovation rencontre la tradition.
             </span>{" "}
-            Découvrez comment notre application réinvente l'épargne rotative
-            marocaine pour le monde numérique, offrant une solution financière
-            collaborative sans intérêts ni frais cachés.
+            Notre application vous aide à organiser et suivre votre cercle
+            d'épargne rotative (tontine/Daret). Outil de suivi gratuit — nous ne
+            détenons ni ne transférons d'argent.
           </p>
         </div>
 
@@ -125,8 +125,8 @@ export default function HowItWorksSection() {
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   Invitez famille, amis ou collègues à former votre cercle Daret
-                  de confiance. Notre système vérifie les membres et sécurise le
-                  groupe avec des contrats numériques.
+                  de confiance. L'app vous aide à suivre les membres et à
+                  organiser le groupe.
                 </p>
 
                 {/* Stats */}
@@ -202,8 +202,8 @@ export default function HowItWorksSection() {
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   Établissez ensemble le montant des contributions, la fréquence
-                  des paiements et l'ordre de distribution. Notre application
-                  s'adapte parfaitement à vos besoins spécifiques.
+                  des versements et l'ordre de distribution. Notre application
+                  s'adapte à vos besoins.
                 </p>
 
                 {/* Stats */}
@@ -278,9 +278,9 @@ export default function HowItWorksSection() {
                   Bénéficiez du Collectif
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Recevez votre tour de financement sans intérêts ni frais
-                  cachés. Notre système automatisé gère les paiements, les
-                  rappels et la transparence pour tous les membres.
+                  Recevez votre tour selon les règles du cercle, sans intérêts.
+                  L'app gère les rappels et le suivi des contributions pour que
+                  chacun voie qui a versé — nous ne détenons pas les fonds.
                 </p>
 
                 {/* Stats */}
@@ -442,7 +442,7 @@ export default function HowItWorksSection() {
                     </div>
                   ))}
 
-                  {/* Money flow animation */}
+                  {/* Contribution flow animation */}
                   <div className="absolute inset-0 pointer-events-none">
                     <div
                       className="absolute top-1/4 left-0 w-4 h-4 bg-banking-accent rounded-full animate-flow-to-center opacity-70"
@@ -515,9 +515,9 @@ export default function HowItWorksSection() {
                           />
                         </svg>
                       ),
-                      title: "Finance Éthique Garantie",
+                      title: "Éthique et sans intérêt",
                       description:
-                        "Solution 100% conforme aux principes de la finance islamique avec zéro intérêt, frais transparents et contrats numériques conformes à la Charia.",
+                        "Conforme aux principes de la finance islamique : zéro intérêt (riba). Outil de suivi et rappels — pas de traitement des fonds.",
                     },
                     {
                       icon: (
@@ -536,9 +536,9 @@ export default function HowItWorksSection() {
                           />
                         </svg>
                       ),
-                      title: "Discipline Financière Simplifiée",
+                      title: "Discipline d'épargne simplifiée",
                       description:
-                        "Système de rappels intelligents, tableaux de bord personnalisés et notifications instantanées pour encourager une parfaite discipline d'épargne.",
+                        "Rappels pour les contributions, tableaux de bord et notifications pour aider le cercle à respecter les versements.",
                     },
                     {
                       icon: (
@@ -562,9 +562,9 @@ export default function HowItWorksSection() {
                           />
                         </svg>
                       ),
-                      title: "Technologie Sécurisée Avancée",
+                      title: "Suivi et traçabilité",
                       description:
-                        "Infrastructure blockchain pour contrats intelligents, paiements cryptés et traçabilité complète des transactions avec standards bancaires.",
+                        "Suivi clair des contributions et de l'ordre des tours. Nous ne traitons pas les paiements — les membres s'organisent entre eux.",
                     },
                   ].map((feature, index) => (
                     <div key={index} className="flex group">
@@ -772,8 +772,8 @@ export default function HowItWorksSection() {
                     growth: "+126% cette année",
                   },
                   {
-                    metric: "0 MAD",
-                    label: "Fonds Circulant",
+                    metric: "0+",
+                    label: "Contributions suivies",
                     growth: "+88% cette année",
                   },
                   {
@@ -829,19 +829,19 @@ export default function HowItWorksSection() {
                 {
                   question: "Qu'est-ce que Daret et comment ça fonctionne ?",
                   answer:
-                    "Daret est un système d'épargne rotative traditionnel marocain où un groupe de personnes contribue régulièrement à un pot commun, chaque membre recevant la totalité du montant collecté à tour de rôle. Notre application numérise et sécurise ce processus tout en préservant son essence communautaire.",
+                    "Daret est un système d'épargne rotative traditionnel marocain (tontine/ROSCA) : un groupe contribue régulièrement, et chaque membre reçoit à tour de rôle le montant collecté. Notre application vous aide à organiser le cercle, suivre les contributions et envoyer des rappels — sans détenir ni transférer d'argent.",
                 },
                 {
                   question:
                     "Daret est-il conforme aux principes de la finance islamique ?",
                   answer:
-                    "Absolument. Daret est 100% conforme à la Charia car il n'implique aucun intérêt (riba) et repose sur l'entraide communautaire. Notre plateforme a été validée par des experts en finance islamique et intègre des contrats numériques conformes à ces principes.",
+                    "Le modèle Daret est conforme à la Charia : pas d'intérêt (riba), entraide communautaire. Notre outil de suivi ne traite pas les fonds ; il aide le cercle à organiser contributions et tours.",
                 },
                 {
                   question:
-                    "Comment l'application sécurise-t-elle mon argent ?",
+                    "Est-ce que BlotoPay détient ou transfère notre argent ?",
                   answer:
-                    "Notre application utilise un système de paiement sécurisé au standard bancaire, une vérification d'identité à plusieurs niveaux, des contrats numériques légalement contraignants, et une transparence totale des transactions grâce à une technologie bien adaptée.",
+                    "Non. Nous ne détenons ni ne transférons d'argent. BlotoPay est un outil de suivi : rappels pour les contributions, visibilité sur qui a versé, et organisation du cercle. Les versements se font entre membres, en dehors de l'app.",
                 },
                 {
                   question:
@@ -859,7 +859,7 @@ export default function HowItWorksSection() {
                   question:
                     "Que se passe-t-il si un membre cesse de contribuer ?",
                   answer:
-                    "Notre système comprend des protections comme les dépôts de garantie, l'historique de fiabilité, et des contrats exécutoires. Dans le cas improbable d'un défaut de paiement, notre fonds de garantie protège les autres membres, et notre équipe juridique prend en charge le recouvrement.",
+                    "L'app vous aide à voir qui a contribué et à envoyer des rappels. Les règles du cercle (ordre des tours, montants) sont définies par les membres. En cas de litige, c'est entre les membres du cercle — nous ne détenons pas les fonds et ne garantissons pas les versements.",
                 },
               ].map((faq, index) => (
                 <div key={index} className="group">

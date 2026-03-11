@@ -88,9 +88,9 @@ export default function Footer() {
             </div>
 
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Daret modernise le système traditionnel marocain d'épargne
-              rotative, offrant une solution financière communautaire sécurisée
-              et transparente sans intérêts ni frais cachés.
+              Outil gratuit pour organiser et suivre votre cercle d'épargne
+              rotative (Daret/tontine). Nous ne détenons ni ne transférons
+              d'argent — suivi des contributions et rappels uniquement.
             </p>
 
             {/* App download buttons */}
@@ -517,7 +517,7 @@ export default function Footer() {
               © {currentYear} Daret. Tous droits réservés.
             </p>
             <p className="text-sm text-gray-500 mt-1">
-              Application réglementée par Bank Al-Maghrib
+              Voir notre Politique de confidentialité et Conditions d'utilisation
             </p>
           </div>
         </div>

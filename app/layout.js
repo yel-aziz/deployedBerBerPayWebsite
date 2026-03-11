@@ -21,8 +21,8 @@ const tajawal = Tajawal({
 });
 
 export const metadata = {
-  title: 'BlotoPay - La Solution de Paiement Intelligente au Maroc',
-  description: 'Divisez vos achats en paiements sans intérêt. La nouvelle façon de magasiner au Maroc.',
+  title: 'BlotoPay - Organisez votre cercle d\'épargne (Daret) au Maroc',
+  description: 'Outil gratuit pour suivre les contributions de votre tontine. Nous ne détenons ni ne transférons d\'argent. Épargne collective sans intérêt.',
 }
 
 export default function RootLayout({ children }) {
