@@ -282,8 +282,8 @@ export default function AppDownload({ variant = "banner" }) {
               Prêt à organiser votre cercle Daret ?
             </h3>
             <p className="text-white/80 text-lg mb-8">
-              Créez ou rejoignez un groupe Daret. Outil de suivi gratuit — pas
-              d'in-app paiements.
+              Créez ou rejoignez un groupe Daret. Outil de suivi gratuit — aucun
+              paiement dans l'app.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a

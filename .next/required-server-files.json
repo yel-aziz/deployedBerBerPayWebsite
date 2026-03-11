@@ -97,7 +97,6 @@
       }
     },
     "outputFileTracingRoot": "C:\\Users\\user\\Desktop\\deployedBerBerPayWebsite",
-    "allowedDevOrigins": [],
     "experimental": {
       "allowedDevOrigins": [],
       "nodeMiddleware": false,

@@ -89,8 +89,8 @@ export default function Footer() {
 
             <p className="text-gray-300 mb-6 leading-relaxed">
               Outil gratuit pour organiser et suivre votre cercle d'épargne
-              rotative (Daret/tontine). Nous ne détenons ni ne transférons
-              d'argent — suivi des contributions et rappels uniquement.
+              rotative (Daret/tontine). Aucun paiement dans l'app — suivi des
+              contributions et rappels uniquement.
             </p>
 
             {/* App download buttons */}

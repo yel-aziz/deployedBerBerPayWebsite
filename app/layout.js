@@ -20,9 +20,22 @@ const tajawal = Tajawal({
   variable: '--font-tajawal',
 });
 
+const siteTitle = 'BlotoPay - Organisez votre cercle d\'épargne (Daret) au Maroc'
+const siteDescription = 'Outil gratuit pour suivre les contributions de votre tontine (Daret). Aucun paiement dans l\'app — suivi et rappels uniquement. Épargne collective.'
+
 export const metadata = {
-  title: 'BlotoPay - Organisez votre cercle d\'épargne (Daret) au Maroc',
-  description: 'Outil gratuit pour suivre les contributions de votre tontine. Nous ne détenons ni ne transférons d\'argent. Épargne collective sans intérêt.',
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteTitle,
+    description: siteDescription,
+  },
 }
 
 export default function RootLayout({ children }) {

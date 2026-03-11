@@ -113,8 +113,8 @@ const Hero = () => {
                   Une tradition transformée par la technologie.
                 </span>{" "}
                 Notre application vous aide à organiser et suivre votre cercle
-                d'épargne rotative « Daret ». Nous ne détenons ni ne transférons
-                d'argent — uniquement un outil de suivi et de rappels.
+                d'épargne rotative « Daret ». Aucun paiement dans l'app —
+                uniquement suivi des contributions et rappels.
               </p>
 
               {/* Trust elements with culturally relevant icons */}
@@ -141,7 +141,7 @@ const Hero = () => {
                       Suivi des contributions
                     </h3>
                     <p className="text-sm text-gray-600">
-                      Voyez qui a contribué — pas de détention de fonds
+                      Voyez qui a contribué — suivi uniquement
                     </p>
                   </div>
                 </div>
@@ -361,8 +361,8 @@ const Hero = () => {
                         Daret
                       </span>
                       <span className="text-white/80 mt-1">Tour 5/8</span>
-                      <span className="text-xl font-bold text-white mt-1">
-                        5000 <span className="text-sm">MAD</span>
+                      <span className="text-sm text-white/80 mt-1">
+                        Montant du cercle
                       </span>
                     </div>
                   </div>
@@ -538,8 +538,9 @@ const Hero = () => {
                         />
                       </svg>
                     </div>
+                    <p className="text-xs text-gray-500">Total cercle</p>
                     <p className="text-xl font-bold text-primary-blue">
-                      40,000<span className="text-xs ml-1">MAD</span>
+                      Suivi
                     </p>
                   </div>
                 </div>
@@ -561,7 +562,7 @@ const Hero = () => {
                     <span className="font-medium text-green-600">
                       Bénéficiaire actuel:
                     </span>{" "}
-                    Leila reçoit 5000 MAD ce mois-ci du fonds commun.
+                    Leila est bénéficiaire ce mois-ci (son tour).
                   </p>
                 </div>
               </div>
@@ -587,7 +588,7 @@ const Hero = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold">Outil de suivi</p>
-                    <p className="text-xs text-gray-500">Pas d’in-app paiements</p>
+                    <p className="text-xs text-gray-500">Aucun paiement dans l'app</p>
                   </div>
                 </div>
               </div>

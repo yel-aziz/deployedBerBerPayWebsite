@@ -1,5 +1,10 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/icon.png/route": "app/icon.png/route.js",
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/cercles/[id]/page": "app/cercles/[id]/page.js",
+  "/page": "app/page.js",
+  "/cercles/page": "app/cercles/page.js",
+  "/poster/page": "app/poster/page.js",
+  "/reset/[password]/page": "app/reset/[password]/page.js",
+  "/reset/page": "app/reset/page.js"
 }

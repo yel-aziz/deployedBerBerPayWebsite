@@ -12,15 +12,30 @@
       "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
     }
   ],
-  "headers": [],
+  "headers": [
+    {
+      "source": "/bloto-drive-booster-agence.png",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "regex": "^/bloto-drive-booster-agence\\.png(?:/)?$"
+    }
+  ],
   "dynamicRoutes": [
     {
-      "page": "/pool/[id]",
-      "regex": "^/pool/([^/]+?)(?:/)?$",
+      "page": "/cercles/[id]",
+      "regex": "^/cercles/([^/]+?)(?:/)?$",
       "routeKeys": {
         "nxtPid": "nxtPid"
       },
-      "namedRegex": "^/pool/(?<nxtPid>[^/]+?)(?:/)?$"
+      "namedRegex": "^/cercles/(?<nxtPid>[^/]+?)(?:/)?$"
     },
     {
       "page": "/reset/[password]",
@@ -45,16 +60,28 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/cercles",
+      "regex": "^/cercles(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cercles(?:/)?$"
+    },
+    {
       "page": "/icon.png",
       "regex": "^/icon\\.png(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/icon\\.png(?:/)?$"
     },
     {
-      "page": "/pool",
-      "regex": "^/pool(?:/)?$",
+      "page": "/poster",
+      "regex": "^/poster(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/pool(?:/)?$"
+      "namedRegex": "^/poster(?:/)?$"
+    },
+    {
+      "page": "/reset",
+      "regex": "^/reset(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/reset(?:/)?$"
     }
   ],
   "dataRoutes": [],

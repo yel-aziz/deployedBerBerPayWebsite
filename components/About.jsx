@@ -77,8 +77,8 @@ export default function HowItWorksSection() {
               L'innovation rencontre la tradition.
             </span>{" "}
             Notre application vous aide à organiser et suivre votre cercle
-            d'épargne rotative (tontine/Daret). Outil de suivi gratuit — nous ne
-            détenons ni ne transférons d'argent.
+            d'épargne rotative (tontine/Daret). Outil de suivi gratuit — l'app ne
+            gère aucun paiement.
           </p>
         </div>
 
@@ -202,7 +202,7 @@ export default function HowItWorksSection() {
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   Établissez ensemble le montant des contributions, la fréquence
-                  des versements et l'ordre de distribution. Notre application
+                  des contributions et l'ordre de distribution. Notre application
                   s'adapte à vos besoins.
                 </p>
 
@@ -214,8 +214,8 @@ export default function HowItWorksSection() {
                         M
                       </span>
                       <span className="ml-2 text-sm text-gray-500">
-                        MAD en <br />
-                        contributions mensuelles
+                        contributions <br />
+                        mensuelles
                       </span>
                     </div>
                     <svg
@@ -280,7 +280,7 @@ export default function HowItWorksSection() {
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   Recevez votre tour selon les règles du cercle, sans intérêts.
                   L'app gère les rappels et le suivi des contributions pour que
-                  chacun voie qui a versé — nous ne détenons pas les fonds.
+                  chacun voie qui a versé — l'app ne gère aucun paiement.
                 </p>
 
                 {/* Stats */}
@@ -517,7 +517,7 @@ export default function HowItWorksSection() {
                       ),
                       title: "Éthique et sans intérêt",
                       description:
-                        "Conforme aux principes de la finance islamique : zéro intérêt (riba). Outil de suivi et rappels — pas de traitement des fonds.",
+                        "Conforme aux principes de la finance islamique : zéro intérêt (riba). Outil de suivi et rappels — aucun paiement dans l'app.",
                     },
                     {
                       icon: (
@@ -538,7 +538,7 @@ export default function HowItWorksSection() {
                       ),
                       title: "Discipline d'épargne simplifiée",
                       description:
-                        "Rappels pour les contributions, tableaux de bord et notifications pour aider le cercle à respecter les versements.",
+                        "Rappels pour les contributions, tableaux de bord et notifications pour aider le cercle à respecter les contributions.",
                     },
                     {
                       icon: (
@@ -564,7 +564,7 @@ export default function HowItWorksSection() {
                       ),
                       title: "Suivi et traçabilité",
                       description:
-                        "Suivi clair des contributions et de l'ordre des tours. Nous ne traitons pas les paiements — les membres s'organisent entre eux.",
+                        "Suivi clair des contributions et de l'ordre des tours. L'app ne gère aucun paiement — les membres s'organisent entre eux.",
                     },
                   ].map((feature, index) => (
                     <div key={index} className="flex group">
@@ -652,7 +652,7 @@ export default function HowItWorksSection() {
                 image: "YT",
                 color: "primary-blue",
                 quote:
-                  "En tant qu'entrepreneur, j'ai pu investir 30 000 MAD dans mon affaire grâce à Daret. Le système de vérification d'identité et les contrats numériques ont rassuré tous les membres de notre groupe.",
+                  "En tant qu'entrepreneur, j'ai pu financer mon affaire grâce à notre cercle Daret. Le suivi et les rappels ont rassuré tous les membres de notre groupe.",
               },
               {
                 name: "Amina Kadiri",
@@ -661,7 +661,7 @@ export default function HowItWorksSection() {
                 image: "AK",
                 color: "primary-mint",
                 quote:
-                  "Notre famille utilise Daret depuis des générations, mais cette application a révolutionné notre pratique. Les notifications automatiques et la transparence des paiements ont éliminé tous les malentendus.",
+                  "Notre famille utilise Daret depuis des générations, mais cette application a révolutionné notre pratique. Les notifications et la transparence du suivi ont éliminé les malentendus.",
               },
             ].map((testimonial, index) => (
               <div key={index} className="relative group"> */}
@@ -829,19 +829,19 @@ export default function HowItWorksSection() {
                 {
                   question: "Qu'est-ce que Daret et comment ça fonctionne ?",
                   answer:
-                    "Daret est un système d'épargne rotative traditionnel marocain (tontine/ROSCA) : un groupe contribue régulièrement, et chaque membre reçoit à tour de rôle le montant collecté. Notre application vous aide à organiser le cercle, suivre les contributions et envoyer des rappels — sans détenir ni transférer d'argent.",
+                    "Daret est un système d'épargne rotative traditionnel marocain (tontine/ROSCA) : un groupe contribue régulièrement, et chaque membre reçoit à tour de rôle le montant collecté. Notre application vous aide à organiser le cercle, suivre les contributions et envoyer des rappels — sans gérer aucun paiement.",
                 },
                 {
                   question:
                     "Daret est-il conforme aux principes de la finance islamique ?",
                   answer:
-                    "Le modèle Daret est conforme à la Charia : pas d'intérêt (riba), entraide communautaire. Notre outil de suivi ne traite pas les fonds ; il aide le cercle à organiser contributions et tours.",
+                    "Le modèle Daret est conforme à la Charia : pas d'intérêt (riba), entraide communautaire. Notre outil de suivi ne gère aucun paiement ; il aide le cercle à organiser contributions et tours.",
                 },
                 {
                   question:
-                    "Est-ce que BlotoPay détient ou transfère notre argent ?",
+                    "BlotoPay gère-t-il les paiements du cercle ?",
                   answer:
-                    "Non. Nous ne détenons ni ne transférons d'argent. BlotoPay est un outil de suivi : rappels pour les contributions, visibilité sur qui a versé, et organisation du cercle. Les versements se font entre membres, en dehors de l'app.",
+                    "Non. L'app ne gère aucun paiement. BlotoPay est un outil de suivi : rappels pour les contributions, visibilité sur qui a contribué, et organisation du cercle. Les échanges se font entre membres, en dehors de l'app.",
                 },
                 {
                   question:
@@ -851,15 +851,15 @@ export default function HowItWorksSection() {
                 },
                 {
                   question:
-                    "Comment l'ordre de réception des fonds est-il déterminé ?",
+                    "Comment l'ordre des tours est-il déterminé ?",
                   answer:
-                    "L'application offre trois options : tirage au sort automatique, priorité basée sur les besoins (vote du groupe), ou ordre prédéterminé fixé au démarrage. Chaque méthode est entièrement transparente et documentée pour tous les membres.",
+                    "L'application vous aide à définir l'ordre : tirage au sort, priorité selon les besoins (vote du groupe), ou ordre prédéterminé. Transparent et documenté pour tous les membres.",
                 },
                 {
                   question:
                     "Que se passe-t-il si un membre cesse de contribuer ?",
                   answer:
-                    "L'app vous aide à voir qui a contribué et à envoyer des rappels. Les règles du cercle (ordre des tours, montants) sont définies par les membres. En cas de litige, c'est entre les membres du cercle — nous ne détenons pas les fonds et ne garantissons pas les versements.",
+                    "L'app vous aide à voir qui a contribué et à envoyer des rappels. Les règles du cercle (ordre des tours, montants) sont définies par les membres. En cas de litige, c'est entre les membres du cercle — l'app ne gère aucun paiement.",
                 },
               ].map((faq, index) => (
                 <div key={index} className="group">
@@ -935,9 +935,9 @@ export default function HowItWorksSection() {
               {[
                 { metric: "0%", label: "ROI Annuel", icon: "chart-up" },
                 {
-                  metric: "0M MAD",
-                  label: "Levée de fonds ciblée",
-                  icon: "money",
+                  metric: "0M",
+                  label: "Levée ciblée",
+                  icon: "chart",
                 },
                 { metric: "2026", label: "Expansion MENA", icon: "globe" },
               ].map((item, index) => (
