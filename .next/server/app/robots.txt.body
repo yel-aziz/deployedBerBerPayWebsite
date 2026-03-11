@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /reset/
+Disallow: /api/
+
+Sitemap: https://www.blotopay.com/sitemap.xml

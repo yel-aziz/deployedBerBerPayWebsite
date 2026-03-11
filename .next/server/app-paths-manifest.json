@@ -1,10 +1,12 @@
 {
-  "/icon.png/route": "app/icon.png/route.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/cercles/[id]/page": "app/cercles/[id]/page.js",
-  "/page": "app/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/icon.png/route": "app/icon.png/route.js",
   "/cercles/page": "app/cercles/page.js",
-  "/poster/page": "app/poster/page.js",
+  "/page": "app/page.js",
+  "/cercles/[id]/page": "app/cercles/[id]/page.js",
+  "/reset/page": "app/reset/page.js",
   "/reset/[password]/page": "app/reset/[password]/page.js",
-  "/reset/page": "app/reset/page.js"
+  "/poster/page": "app/poster/page.js"
 }

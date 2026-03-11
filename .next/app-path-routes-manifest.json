@@ -1,10 +1,12 @@
 {
-  "/icon.png/route": "/icon.png",
   "/_not-found/page": "/_not-found",
-  "/cercles/[id]/page": "/cercles/[id]",
-  "/page": "/",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/icon.png/route": "/icon.png",
   "/cercles/page": "/cercles",
-  "/poster/page": "/poster",
+  "/page": "/",
+  "/cercles/[id]/page": "/cercles/[id]",
+  "/reset/page": "/reset",
   "/reset/[password]/page": "/reset/[password]",
-  "/reset/page": "/reset"
+  "/poster/page": "/poster"
 }
